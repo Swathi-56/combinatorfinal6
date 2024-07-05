@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            height: 50px;
+            width: 50px;
+            gap: 5px;
+        }
+        @media (min-width:768px) and (max-width:1024px){
+            .img{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            #img4,#img8,#img12,#img12,#img13,#img14,#img15,#img16{
+                display: none;
+            }
+        }
+        @media (min-width:425px) and (max-width:768px){
+            .img{
+                grid-template-columns: repeat(2, 1fr);
+            }
+             #img3,#img4,#img7,#img8,#img9,#img10,#img11,#img12,#img13,#img14,#img15,#img16{
+                display: none;
+            }
+
+        }
+        .imgg{
+            height:200px;
+            width:200px;
+            margin:15px;
+        }
+</style>
+</head>
+<body>
+    <h1>Media queries</h1>
+    <div class="img">
+        
+     <span id="img1" class="imgg"><img class="imgg" src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img2" class="imgg"><img class="imgg"src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img3"class="imgg"><img  class="imgg"src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img4" class="imgg"><img class="imgg" src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img5" class="imgg"><img class="imgg" src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img6" class="imgg"><img class="imgg" src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img7" class="imgg"><img class="imgg" src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img8" class="imgg"><img class="imgg" src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img9" class="imgg"><img  class="imgg" src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img10" class="imgg"><img  class="imgg"src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img11" class="imgg"><img  class="imgg"src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img12" class="imgg"><img  class="imgg"src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img13" class="imgg"><img  class="imgg"src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img14" class="imgg"><img  class="imgg"src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img15" class="imgg"><img  class="imgg"src="../assets/Aeroplane.jpg" alt="img"></span>
+    <span id="img16" class="imgg"><img class="imgg" src="../assets/Aeroplane.jpg" alt="img"></span>
+    </div>
+</div>
+</body>
+</html>
