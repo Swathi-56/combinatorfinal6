@@ -6,8 +6,7 @@
     <title>Document</title>
     <style>
         .top{background-color: hotpink;
-    
-        }
+         }
         .first{ 
             background-color: blueviolet;
             height: 120px;
@@ -18,7 +17,7 @@
         }
         .parent{
             height: 250px;
-            width: 1000px;
+            width: 100vw;
             background-color: beige;
         }
         .box2{
@@ -59,6 +58,7 @@
             gap: 10px;
             grid-template-columns: 296px 296px 296px 296px 296px;
             grid-template-rows:296px 296px ;
+            border-radius: 10px;
         }
         
         .child1{
@@ -128,7 +128,7 @@
         .childb{
             background-color: aqua;
             display: grid;
-            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-columns: 130px 130px 130px 130px;
             grid-template-rows: 150px ;
             justify-content: space-evenly;
         }
@@ -154,12 +154,7 @@
            grid-template-columns: 700px 800px;
            grid-template-rows: 500px;
        }
-       .chil{
-        background-color: wheat;
-        display: flex;
-        padding: 70px;
-       }
-       .childfi{
+        .childfi{
         background-image: url(../assets/comparto.jpg);
         background-repeat: no-repeat;
       }
@@ -307,6 +302,42 @@
         display: flex;
         flex-direction:column;
     }
+    @media screen and (min-width:320px) and (max-width:425px) {
+        body{
+            border:10px solid red;
+        }
+        .parent{
+            display: flex !important;
+          
+            background-color:white;
+            height: 80px !important;
+            padding:0px;
+         }
+        .childb{
+          display:flex;
+          padding:0px;
+        }
+        .child{
+            background-color:aqua;
+            width:20px !important;
+            height: 10px !important;
+            /* padding: 50px; */
+            padding:0px;
+        }
+        .childb div{
+            width:20vw !important;
+            height:15vw !important;
+            padding: 0px;
+        }
+        .childfi,.childse{
+            width: 89vw !important;
+            height: 80vh!important;
+            padding: 0px;
+        }
+       
+       
+        
+    }
    
 
 
@@ -323,11 +354,11 @@
 <body>
     <div class="parent">
         <div class="child" style="color: red;">COMPARTO</div>
-        <div class="child childb">
-            <div class="num1">.01<br>About</div>
-            <div class="num2">.02<br>Services</div>
-            <div class="num3">.03<br>Gallery</div>
-            <div class="num4">.04<br>Contact</div>
+        <div class="childb">
+            <div class="num1">.01 About</div>
+            <div class="num2">.02 Services</div>
+            <div class="num3">.03 Gallery</div>
+            <div class="num4">.04 Contact</div>
         </div>
     </div>
     <div class="containerA">
@@ -413,7 +444,7 @@
             
            <iframe class="swathi"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15225.157472202647!2d80.14094954679862!3d17.445858835218413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a346090143e5183%3A0xad617939dc4f3e39!2sDornakal%2C%20Telangana!5e0!3m2!1sen!2sin!4v1718261438390!5m2!1sen!2sin"
              style="border:0;"loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>
+        </div>
         <div class="second">
             <h4>Name</h4>
             <hr>
