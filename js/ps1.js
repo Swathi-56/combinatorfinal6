@@ -16,4 +16,9 @@ let c="";
 for(i=-10;!(i>=0);i++){
     c=c+i+" ";
 }
-console.log(c);
+console.log(c);3
+let num=10;
+do{
+    console.log(num);
+    num--;
+}while(num>0);

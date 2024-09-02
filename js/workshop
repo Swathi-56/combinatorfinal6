@@ -1,0 +1,5 @@
+function swathi(arr){
+    return arr.map(str => str.toUpperCase());
+}
+console.log(swathi(["hello","world","abc"]));
+console.log(swathi(["xyz","abc","def"]));//touppercase//
