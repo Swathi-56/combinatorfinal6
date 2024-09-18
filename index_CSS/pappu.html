@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div { padding: 20px; border: 1px solid black; }
+  </style>
+</head>
+<body>
+  <div id="grandparent">Grandparent
+    <div id="parent">Parent
+      <div id="child">Child</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('child').addEventListener('click', function() {
+      alert('Child clicked');
+    });
+
+    document.getElementById('parent').addEventListener('click', function() {
+      alert('Parent clicked');
+    });
+
+    document.getElementById('grandparent').addEventListener('click', function() {
+      alert('Grandparent clicked');
+    });
+  </script>
+</body>
+</html>
